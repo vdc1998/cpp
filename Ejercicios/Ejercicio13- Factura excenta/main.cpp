@@ -25,7 +25,7 @@ int main(int argc, char** argv) {
     
 	//proceso
 	if (estaExcenta == 'n' || estaExcenta == 'N')
-		calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
+	calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
 	else
 		if (estaExcenta == 's' || estaExcenta == 'S')
 		calculoImpuesto = 0;
