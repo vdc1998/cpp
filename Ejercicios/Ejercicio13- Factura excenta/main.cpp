@@ -24,12 +24,13 @@ int main(int argc, char** argv) {
     cin >> estaExcenta;
     
 	//proceso
-	if (estaExcenta == 'n' || estaExcenta == 'N')
-	calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
-	else
+	if (estaExcenta == 'n' || estaExcenta == 'N'){
+		calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
+	} else {
 		if (estaExcenta == 's' || estaExcenta == 'S')
 		calculoImpuesto = 0;
-	 
+		}
+	
 	calculoDescuento = (subtotal * descuento) / 100;
    
 	total = subtotal - calculoDescuento + calculoImpuesto;
