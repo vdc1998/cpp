@@ -20,9 +20,9 @@ int main(int argc, char** argv) {
     cin >> descuento;
     
 	//proceso
-	calculoDescuento = (subtotal * descuento) / 100;
+    calculoDescuento = (subtotal * descuento) / 100;
     calculoImpuesto = (subtotal - calculoDescuento) * 0.15;
-	total = subtotal - calculoDescuento + calculoImpuesto;
+    total = subtotal - calculoDescuento + calculoImpuesto;
 	
     //salida
     cout << endl;
